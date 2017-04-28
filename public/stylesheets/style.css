@@ -1,5 +1,3 @@
-/* Sticky footer styles
--------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
@@ -14,6 +12,8 @@ body {
   padding-bottom: 20px;
 }
 
+/* Sticky footer styles
+-------------------------------------------------- */
 .footer {
   position: absolute;
   bottom: 0;

@@ -5,34 +5,34 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+/* Routes Handlers */
 var index = require('./routes/index');
-var users = require('./routes/users');
 
+/* Application Configurations */
 var app = express();
-
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
-// uncomment after placing your favicon in /public
 app.use(favicon(path.join(__dirname, 'public', 'images', 'logo.png')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+/* Static Folder Definition */
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components' ,express.static(path.join(__dirname, 'bower_components')));
-app.use('/', index);
-app.use('/users', users);
 
-// catch 404 and forward to error handler
+/* Request Router */
+app.use('/', index);
+
+/* Default Error Generator */
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
-// error handler
+/* Default Error Handler */
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
