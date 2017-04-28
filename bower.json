@@ -1,0 +1,21 @@
+{
+  "name": "companyprofile",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Rakshith Koravadi Hatwar <rakshithk@live.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
