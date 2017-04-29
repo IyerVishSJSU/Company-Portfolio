@@ -19,6 +19,48 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 120px;
+  padding: 60px;
+  /*height: 120px;*/
   background-color: #f5f5f5;
+}
+
+/* Carasol */
+
+#carouselHomepage {
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+/* Twitter */
+.timeline-InformationCircle-widgetParent {
+  position: relative;
+  display: none;
+}
+
+#twitter-widget-0 {
+  z-index: 999;
+  position: absolute !important;
+  bottom: -37px !important;
+  width: 300px !important;
+  right: 0px !important;
+  height: 200px !important;
+}
+
+.copyrights-text-footer {
+  color: whitesmoke;
+  font-size: x-small;
+  position: absolute;
+  bottom: 0;
+}
+
+.fillWidth { /* class name used in javascript too */
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  margin-top: -292px;
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
