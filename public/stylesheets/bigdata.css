@@ -22,6 +22,45 @@ body {
   text-align: justify;
 }
 
+#heading_download {
+  width: 300px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#model_body {
+  margin-left: 20px;
+  border-bottom: 0px;
+}
+
+#label_firstname {
+  text-align: right;
+}
+
+#label_lastname {
+  text-align: right;
+}
+
+#label_emailaddress {
+  text-align: right;
+}
+
+#download_brochure {
+  text-align: right;
+}
+
+#model_header {
+  text-align: center;
+  margin-left: 20%;
+  border-bottom: 0px;
+}
+
+#model_footer {
+  text-align: center;
+  border-top: 0px;  
+  margin-right: 25%;
+}
+
+
 #imagepart {
   width: 100%
 }
@@ -37,6 +76,23 @@ body {
   margin-left: 10px;
 }
 
+
+#rating {
+    margin-top: 50%;
+    margin-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: #5bc0de
+}
+
+#accolades {
+    margin-top: 15px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    background-color: #5bc0de
+}
+    
 /* Sticky footer styles
 -------------------------------------------------- */
 .footer {
