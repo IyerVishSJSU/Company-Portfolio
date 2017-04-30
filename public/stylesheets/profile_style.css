@@ -1,7 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 .main {
-    padding: 20px;
+    padding: 10px;
+}
+.top_content p{
+    width: 80%;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin:auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.top_content>h1{
+    text-align: center;
+    color: #ff3300;
+}
+.right_bottom_content{
+    float: right;
+    width: 75%;
+    height: 700px;
+}
+.left_bottom_content{
+    float: left;
+    width: 20%;
+    height: 700px;
+    margin: auto;
+    border-right: inset #993399 ;
+    font-family: 'News Cycle',sans-serif;
+    padding: 10px;
+}
+.left_bottom_content>img{
+    float: left;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
 }
 .animate {
     -webkit-transition: all 0.3s ease-in-out;
@@ -11,15 +45,15 @@
     transition: all 0.3s ease-in-out;
 }
 .info-card {
-    width: 100%;
+    /*width: 60%;*/
     border: 1px solid rgb(215, 215, 215);
     position: relative;
     font-family: 'Lato', sans-serif;
+    font-size: small;
     margin-bottom: 20px;
     overflow: hidden;
 }
 .info-card > img {
-    width: 100px;
     margin-bottom: 60px;
 }
 .info-card .info-card-details,
@@ -124,4 +158,8 @@ a.linkedin {
 }
 a.linkedin:hover {
     background-color: rgb(1, 116, 179);
+}
+.btn{
+    border: hidden;
+    /*background-color: white;*/
 }

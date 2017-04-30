@@ -8,117 +8,231 @@
     <title><%= title%></title>
     <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css'  crossorigin="anonymous"/>
     <link rel='stylesheet' href='/stylesheets/profile_style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
     <header id="header" class="header"></header>
     <div class="main">
-        <div class="row">
-            <div class="[col-sm-6 col-md-4 ]">
-                <div class="[ info-card ]">
-                    <img style="width: 100%" src="/images/a_vishwanath.jpeg" />
-                    <div class="[ info-card-details ] animate">
-                        <div class="[ info-card-header ]">
-                            <h1>Vishwanath Iyer</h1>
-                            <h3>Good Coder, Great Chef!!</h3>
-                        </div>
-                        <div class="[ info-card-detail ]">
-                            <!-- Description -->
-                            <p>A person who believes that, "Winning is not everything, Participation matters a lot!!". The prospect of delivering a fully functional end product- a working prototype has always fascinated me
-                                and urged me to work till perfection.</p>
-                            <div class="social">
-                                <a href="https://www.facebook.com/iyervishwanath" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-                                <a href="https://github.com/IyerVishSJSU" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-                                <a href="https://www.linkedin.com/in/vishwanathiyersjsu/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+        <div class="top_content">
+            <h1>Management</h1>
+            <p>Team Awesome is a group of Computer Software Engineers that have worked relentlessly to
+            maintain the vision of the company. The company's mission is to removes the hurdle of learning
+            Web UI and make it easy to understand and apply. We are at present partnering with San Jose State
+                University to provide quality open university courses for UI Design and Development.
+            Reach out to us if you also want to make a meaningful impact on this society.</p>
+        </div>
+        <div class="left_bottom_content">
+            <h2> Featured News </h2>
+            <img src="http://placekitten.com/200/120">
+            <a href="http://www.pcworld.com/article/3193143/security/googles-chrome-will-soon-start-warning-you-more-about-http-pages.html">
+                <p>Google's Chrome will soon start warning you more about HTTP pages</p></a>
+            <br>
+            <br>
+            <img src="http://placekitten.com/200/120">
+            <a href="http://www.pcworld.com/article/3193143/security/googles-chrome-will-soon-start-warning-you-more-about-http-pages.html">
+                <p>Google's Chrome will soon start warning you more about HTTP pages</p></a>
+        </div>
+        <div class="right_bottom_content">
+            <div class="row">
+                    <div class="[col-sm-6 col-md-4 col-lg-3 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%" src="/images/a_vishwanath.jpeg" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Vishwanath Iyer</h1>
+                                    <h3>Great Listener</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <p>Vishwanath is a person who believes that, "Winning is not everything, Participation matters a lot!!".</p>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">Read More...</button>
+                                    <!-- Modal -->
+                                    <div id="myModal1" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">About Vishwanath</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Vishwanath is a student at San Jose State University. He is fluent in JAVA and front end Technologies such as
+                                                        Javascript, JQuery as well as Databases such as Oracle and MongoDB.Previously worked as Software
+                                                        Engineer and has 3 years experience.</p>
+                                                </div>
+                                                <div class="social">
+                                                    <a href="https://www.facebook.com/iyervishwanath" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+                                                    <a href="https://github.com/IyerVishSJSU" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+                                                    <a href="https://www.linkedin.com/in/vishwanathiyersjsu/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="[col-sm-6 col-md-4 ]">
-                <div class="[ info-card ]">
-                    <img style="width: 100%" src="/images/a_vishwanath.jpeg" />
-                    <div class="[ info-card-details ] animate">
-                        <div class="[ info-card-header ]">
-                            <h1>Vishwanath Iyer</h1>
-                            <h3>Good Coder, Great Chef!!</h3>
-                        </div>
-                        <div class="[ info-card-detail ]">
-                            <!-- Description -->
-                            <p>A person who believes that, "Winning is not everything, Participation matters a lot!!". The prospect of delivering a fully functional end product- a working prototype has always fascinated me
-                                and urged me to work till perfection.</p>
-                            <div class="social">
-                                <a href="#" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-                                <a href="#" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-                                <a href="#" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                    <div class="[col-sm-6 col-md-4 col-lg-3 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%" src="/images/rakshith.PNG" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Rakshith Hatwar</h1>
+                                    <h3>Multi Tasker</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <p>Rakshith is a person who can handle tons of work systematically and finish well with finess</p>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal3">Read More...</button>
+                                    <!-- Modal -->
+                                    <div id="myModal3" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">About Rakshith</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Rakshith is a student at San Jose State University. He works as an Intern at StubHub Inc. Maintains a 4.0 GPA.</p>
+                                                </div>
+                                                <div class="social">
+                                                    <a href="https://www.facebook.com/rakshithkhatwar" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+                                                    <a href="https://github.com/ksuperman" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+                                                    <a href="https://www.linkedin.com/in/rakshithkhatwar/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="[col-sm-6 col-md-4 ]">
-                <div class="[ info-card ]">
-                    <img style="width: 100%" src="/images/a_vishwanath.jpeg" />
-                    <div class="[ info-card-details ] animate">
-                        <div class="[ info-card-header ]">
-                            <h1>Vishwanath Iyer</h1>
-                            <h3>Good Coder, Great Chef!!</h3>
-                        </div>
-                        <div class="[ info-card-detail ]">
-                            <!-- Description -->
-                            <p>A person who believes that, "Winning is not everything, Participation matters a lot!!". The prospect of delivering a fully functional end product- a working prototype has always fascinated me
-                                and urged me to work till perfection.</p>
-                            <div class="social">
-                                <a href="#" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-                                <a href="#" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-                                <a href="#" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+
+                    <div class="[col-sm-6 col-md-4 col-lg-3 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%" src="/images/jagruti.jpg" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Jagruti Patil</h1>
+                                    <h3>Talented Gal</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <p>Jagruti is an avid fitness enthusiast as well as quite a social person. Loves to code.</p>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal4">Read More...</button>
+                                    <!-- Modal -->
+                                    <div id="myModal4" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">About Jagruti</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Jagruti is a student at San Jose State University. She previously worked as an Software Engineer Intern at Amazon.</p>
+                                                </div>
+                                                <div class="social">
+                                                    <a href="https://www.facebook.com/jagruti.patil.1650" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+                                                    <a href="https://github.com/jagrutipatil" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+                                                    <a href="https://www.linkedin.com/in/patiljagruti/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="[col-sm-6 col-md-4 ]">
-                <div class="[ info-card ]">
-                    <img style="width: 100%" src="/images/a_vishwanath.jpeg" />
-                    <div class="[ info-card-details ] animate">
-                        <div class="[ info-card-header ]">
-                            <h1>Vishwanath Iyer</h1>
-                            <h3>Good Coder, Great Chef!!</h3>
-                        </div>
-                        <div class="[ info-card-detail ]">
-                            <!-- Description -->
-                            <p>A person who believes that, "Winning is not everything, Participation matters a lot!!". The prospect of delivering a fully functional end product- a working prototype has always fascinated me
-                                and urged me to work till perfection.</p>
-                            <div class="social">
-                                <a href="#" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-                                <a href="#" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-                                <a href="#" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+
+                    <div class="[col-sm-6 col-md-4 col-lg-3 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%" src="/images/prajwal.jpg" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Prajwal Kondawar</h1>
+                                    <h3>Tech Guru</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <p>Prajwal loves all kind of sports. His hobbies include learning new technologies and imparting to others</p>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal5">Read More...</button>
+                                    <!-- Modal -->
+                                    <div id="myModal5" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">About Prajwal</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Prajwal is a student at San Jose State University. He previously worked as an Software Engineer Intern at Cisco.</p>
+                                                </div>
+                                                <div class="social">
+                                                    <a href="https://www.facebook.com/kondawar" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+                                                    <a href="https://github.com/prajwal051290" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+                                                    <a href="https://www.linkedin.com/in/prajwalkondawar/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="[col-sm-6 col-md-4 ]">
-                <div class="[ info-card ]">
-                    <img style="width: 100%" src="/images/a_vishwanath.jpeg" />
-                    <div class="[ info-card-details ] animate">
-                        <div class="[ info-card-header ]">
-                            <h1>Vishwanath Iyer</h1>
-                            <h3>Good Coder, Great Chef!!</h3>
-                        </div>
-                        <div class="[ info-card-detail ]">
-                            <!-- Description -->
-                            <p>A person who believes that, "Winning is not everything, Participation matters a lot!!". The prospect of delivering a fully functional end product- a working prototype has always fascinated me
-                                and urged me to work till perfection.</p>
-                            <div class="social">
-                                <a href="#" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
-                                <a href="#" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
-                                <a href="#" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+
+                    <div class="[col-sm-6 col-md-4 col-lg-3 ]">
+                        <div class="[ info-card ]">
+                            <img style="width: 100%" src="/images/ashwin.jpg" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-header ]">
+                                    <h1>Ashwin Angle</h1>
+                                    <h3>Loves Travelling</h3>
+                                </div>
+                                <div class="[ info-card-detail ]">
+                                    <p>Ashwin is an Adventerous Techie. Loves taking part in Hackathons and good coder.</p>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">Read More...</button>
+                                    <!-- Modal -->
+                                    <div id="myModal1" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title">About Ashwin</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Ashwin is a student at San Jose State University. Worked as a Software Engineer Intern at Intuit Inc.</p>
+                                                </div>
+                                                <div class="social">
+                                                    <a href="https://www.facebook.com/ashwinangle30" class="[ social-icon facebook ] animate"><span class="fa fa-facebook"></span></a>
+                                                    <a href="https://github.com/ashwinangle30" class="[ social-icon github ] animate"><span class="fa fa-github-alt"></span></a>
+                                                    <a href="https://www.linkedin.com/in/ashwinangle/" class="[ social-icon linkedin ] animate"><span class="fa fa-linkedin"></span></a>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
-    </div>
+            </div>
+        </div>
+
     </div>
     <footer class="footer navbar-inverse bg-inverse" id="footer"></footer>
 
