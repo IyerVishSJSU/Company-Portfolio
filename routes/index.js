@@ -14,4 +14,8 @@ router.get('/blog.ejs', function(req, res, next) {
 	res.render('blog', { title: 'Blog' });
 });
 
+router.get('/aboutus', function(req, res, next) {
+    res.render('profile_page', { title: 'About Us' });
+});
+
 module.exports = router;
