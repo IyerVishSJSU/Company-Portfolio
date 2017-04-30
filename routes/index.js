@@ -10,6 +10,10 @@ router.get('/big_data.ejs', function(req, res, next) {
 	res.render('big_data', { title: 'Big Data' });
 });
 
+router.get('/iot.ejs', function(req, res, next) {
+	res.render('iot', { title: 'IOT' });
+});
+
 router.get('/blog.ejs', function(req, res, next) {
 	res.render('blog', { title: 'Blog' });
 });
