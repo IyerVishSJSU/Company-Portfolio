@@ -22,4 +22,9 @@ router.get('/aboutus', function(req, res, next) {
     res.render('profile_page', { title: 'About Us' });
 });
 
+router.get('/locations', function(req, res, next) {
+  res.render('locations', { title: 'locations' });
+
+});
+
 module.exports = router;
