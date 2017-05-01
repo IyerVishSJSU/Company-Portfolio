@@ -59,7 +59,7 @@
                         <p> <strong> First Name: </strong></p>
                       </div>
                       <div class="col-md-2" id="input_firstname">
-                        <input type="text" value="">
+                        <input type="text" id="firstname1" value="">
                       </div>
                   </div>  
 
@@ -68,7 +68,7 @@
                         <p> <strong> Last Name: </strong></p>
                       </div>
                       <div class="col-md-2" id="input_lastname">
-                        <input type="text" value="">
+                        <input type="text" id="lastname1" value="">
                       </div>
                   </div>  
 
@@ -77,12 +77,12 @@
                         <p> <strong> Email: </strong></p>
                       </div>
                       <div class="col-md-2" id="input_emailaddress">
-                        <input type="email" value="">
+                        <input type="email" id="emailid1" value="">
                       </div>
                   </div>  
             </div>
             <div id="model_footer" class="modal-footer">
-              <a class="btn btn-info" href="/download/download.pdf" download="brochure.pdf">Download</a>
+              <a class="btn btn-info" href="/download/download.pdf" download="brochure.pdf" onclick="saveData()">Download</a>
               <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
             </div>
           </div>          
@@ -102,7 +102,7 @@
                         <p> <strong> First Name: </strong></p>
                       </div>
                       <div class="col-md-2" id="input_firstname">
-                        <input type="text" value="">
+                        <input type="text" id="firstname2" value="">
                       </div>
                   </div>  
 
@@ -111,7 +111,7 @@
                         <p> <strong> Last Name: </strong></p>
                       </div>
                       <div class="col-md-2" id="input_lastname">
-                        <input type="text" value="">
+                        <input type="text" id="lastname2" value="">
                       </div>
                   </div>  
 
@@ -120,12 +120,12 @@
                         <p> <strong> Email: </strong></p>
                       </div>
                       <div class="col-md-2" id="input_emailaddress">
-                        <input type="email" value="">
+                        <input type="email" id="emailid2" value="">
                       </div>
                   </div>  
             </div>
             <div id="model_footer" class="modal-footer">
-              <a class="btn btn-info" href="/download/download.pdf" download="whitepaper.pdf">Download</a>
+              <a class="btn btn-info" href="/download/download.pdf" download="whitepaper.pdf" onclick="saveData1()">Download</a>
               <button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
             </div>
           </div>          
@@ -140,5 +140,40 @@
 
 <!-- Initialize Scripts -->
 <script src="/javascripts/initialize.js" defer></script>
+<script>
+  function saveData() {
+    var firstname = document.getElementById('firstname1').value;
+    var lastname = document.getElementById('lastname1').value;
+    var emailid = document.getElementById('emailid1').value;
+
+    saveTodb(firstname, lastname, emailid);
+  }
+
+  function saveData1() {
+    var firstname = document.getElementById('firstname2').value;
+    var lastname = document.getElementById('lastname2').value;
+    var emailid = document.getElementById('emailid2').value;
+
+    saveTodb(firstname, lastname, emailid);
+  }  
+
+  function saveTodb(firstname, lastname, emailid) {
+    console.log(firstname);
+    console.log(lastname);
+    console.log(emailid);
+
+      $.ajax({
+            type: 'POST',
+            url: '/data/saveinfo',
+            data: { "firstname": firstname,
+                    "lastname": lastname,
+                    "email" : emailid},
+            dataType: 'json',                              
+        }).done(function(result) {
+            console.log(result);
+        });  
+  }
+
+</script>
 </body>
 </html>
