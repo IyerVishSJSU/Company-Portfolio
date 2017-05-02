@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>IoT</title>
+<link rel='stylesheet'
+	href='/bower_components/bootstrap/dist/css/bootstrap.css'
+	crossorigin="anonymous" />
+<link rel='stylesheet' href='/stylesheets/iot.css' />
+
+</head>
+<body>
+	<header id="header" class="header"></header>
+	<div class="main">
+		<div class="row">
+			<div class="col-md-2">
+				<div id="brochure">
+					<button type="button" class="btn btn-info" data-toggle="modal"
+						data-target="#download_brochure">Brochure</button>
+				</div>
+				<div id="whitepaper">
+					<button type="button" class="btn btn-info" data-toggle="modal"
+						data-target="#download_white_paper">White Paper</button>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div id="heading">
+					<h4>
+						<strong>Internet of Things</strong>
+					</h4>
+				</div>
+				<div id="content">
+					<p>Everything from the phones we carry in our pockets, to the
+						cars we drive, to the buildings in which we work and live, are
+						linked to massive networks of data. Sensors and connectors
+						designed and manufactured by TE Connectivity (TE) help keep those
+						networks from going offline. Here are some of the ways TE is
+						helping to create a more connected world and keep The Internet of
+						Things growing.</p>
+				</div>
+				<div class="images">
+					<img id="imagepart" src="/images/iot.jpg">
+				</div>
+				<div id="pricing">
+					<h4>
+						<strong>Our Offer Pricing</strong>
+					</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="price-offer">
+								<span>Number of Sensors : 30</span>
+								<span>Data Streams : 30kb/sec</span> 
+								<span>Price : $30 / month</span>  
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="price-offer">
+								<span>Number of Sensors : 60</span>
+								<span>Data Streams : 50kb/sec</span> 
+								<span>Price : $50 / month</span>  
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2" id="customer_comments">
+				<div id="rating" class="label label-info">Customer Rating:
+					4.0/5</div>
+				<div id="accolades" class="label label-info">Customer: A great article on IoT.</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="download_brochure" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div id="model_header" class="modal-header">
+						<button type="button" id="heading_download" class="btn btn-info">
+							Download Brochure</button>
+					</div>
+					<div id="model_body" class="modal-body">
+						<div id="firstname" class="row">
+							<div class="col-md-3" id="label_firstname">
+								<p>
+									<strong> First Name: </strong>
+								</p>
+							</div>
+							<div class="col-md-2" id="input_firstname">
+								<input type="text" value="">
+							</div>
+						</div>
+
+						<div id="lastname" class="row">
+							<div class="col-md-3" id="label_lastname">
+								<p>
+									<strong> Last Name: </strong>
+								</p>
+							</div>
+							<div class="col-md-2" id="input_lastname">
+								<input type="text" value="">
+							</div>
+						</div>
+
+						<div id="emailaddress" class="row">
+							<div class="col-md-3" id="label_emailaddress">
+								<p>
+									<strong> Email: </strong>
+								</p>
+							</div>
+							<div class="col-md-2" id="input_emailaddress">
+								<input type="email" value="">
+							</div>
+						</div>
+					</div>
+					<div id="model_footer" class="modal-footer">
+						<a class="btn btn-info" href="/download/download.pdf"
+							download="brochure.pdf">Download</a>
+						<button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="download_white_paper" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div id="model_header" class="modal-header">
+						<button type="button" id="heading_download" class="btn btn-info">
+							Download White Paper</button>
+					</div>
+					<div id="model_body" class="modal-body">
+						<div id="firstname" class="row">
+							<div class="col-md-3" id="label_firstname">
+								<p>
+									<strong> First Name: </strong>
+								</p>
+							</div>
+							<div class="col-md-2" id="input_firstname">
+								<input type="text" value="">
+							</div>
+						</div>
+
+						<div id="lastname" class="row">
+							<div class="col-md-3" id="label_lastname">
+								<p>
+									<strong> Last Name: </strong>
+								</p>
+							</div>
+							<div class="col-md-2" id="input_lastname">
+								<input type="text" value="">
+							</div>
+						</div>
+
+						<div id="emailaddress" class="row">
+							<div class="col-md-3" id="label_emailaddress">
+								<p>
+									<strong> Email: </strong>
+								</p>
+							</div>
+							<div class="col-md-2" id="input_emailaddress">
+								<input type="email" value="">
+							</div>
+						</div>
+					</div>
+					<div id="model_footer" class="modal-footer">
+						<a class="btn btn-info" href="/download/download.pdf"
+							download="whitepaper.pdf">Download</a>
+						<button type="button" class="btn btn-info" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer navbar-inverse bg-inverse" id="footer"></footer>
+	<!-- Script Library -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/tether/dist/js/tether.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+	<!-- Initialize Scripts -->
+	<script src="/javascripts/initialize.js" defer></script>
+</body>
+</html>
