@@ -27,4 +27,8 @@ router.get('/locations', function(req, res, next) {
 
 });
 
+router.get('/big_data.ejs', function(req, res, next) {
+  res.render('big_data', { title: 'Big Data' });
+});
+
 module.exports = router;

@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 /* Routes Handlers */
 var index = require('./routes/index');
+var db = require('./routes/db');
 
 /* Application Configurations */
 var app = express();
@@ -24,6 +25,7 @@ app.use('/bower_components' ,express.static(path.join(__dirname, 'bower_componen
 
 /* Request Router */
 app.use('/', index);
+app.use('/data', db);
 
 /* Default Error Generator */
 app.use(function(req, res, next) {
